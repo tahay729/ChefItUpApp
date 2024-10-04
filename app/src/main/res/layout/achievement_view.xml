@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="120dp"
+    android:layout_height="215dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="4dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <ImageView
+            android:id="@+id/achievementImage"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:scaleType="centerCrop"
+            android:background="@color/yellow"
+            android:src="@drawable/achievements"/>
+
+        <TextView
+            android:id="@+id/achievementName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Achievement Name"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/achievementDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Achievement description"
+            android:gravity="center"
+            android:lines="3"
+            android:textSize="8sp"/>
+        
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

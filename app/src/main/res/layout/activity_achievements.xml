@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Achievements">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#ffa500">
+
+            <ImageView
+                android:id="@+id/backButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/ic_baseline_back" />
+
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="serif"
+                android:textColor="@color/black"
+                android:includeFontPadding="false"
+                android:text="Achievements"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/userName"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:paddingRight="20dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/title"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:includeFontPadding="false"
+                android:text="Admin"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/achievementsCompleted"
+                android:layout_width="wrap_content"
+                android:paddingRight="20dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/userName"
+                android:layout_marginLeft="10dp"
+                android:text="0"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:layout_below="@+id/top">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/achievements_recycleView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="1dp"
+                tools:listitem="@layout/achievement_view" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "880138899478",
+    "firebase_url": "https://chefitup-99ce5-default-rtdb.firebaseio.com",
+    "project_id": "chefitup-99ce5",
+    "storage_bucket": "chefitup-99ce5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:880138899478:android:d20b975cef23433e2ea537",
+        "android_client_info": {
+          "package_name": "project.group3TZTechCorp.chefitup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "880138899478-tkm42uosajaurdedfd9ljnis4cfiskmk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8hzxRrL3hbt_trPY9WoeN1w8crXqawQw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "880138899478-tkm42uosajaurdedfd9ljnis4cfiskmk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:880138899478:android:5e0b42cfb3a573402ea537",
+        "android_client_info": {
+          "package_name": "project.group3tztechcorp.chefitupapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "880138899478-tkm42uosajaurdedfd9ljnis4cfiskmk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8hzxRrL3hbt_trPY9WoeN1w8crXqawQw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "880138899478-tkm42uosajaurdedfd9ljnis4cfiskmk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

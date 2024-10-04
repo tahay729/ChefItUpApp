@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".ui.RecipeHomeFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="400dp"
+        android:layout_height="209dp"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="227dp"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/points_Image"
+                android:layout_width="380dp"
+                android:layout_height="179dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/loginbackground" />
+            <TextView
+                android:id="@+id/pointsDescription"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:lines="3"
+                android:layout_alignParentBottom="true"
+                android:text="6 Points awarded for this recipe"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

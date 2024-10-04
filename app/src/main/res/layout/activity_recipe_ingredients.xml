@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".recipeUI.RecipeIngredients">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:id="@+id/topSection">
+
+            <TextView
+                android:id="@+id/headerTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ingredients"
+                android:layout_centerInParent="true"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/backButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/ic_baseline_back" />
+
+            <Button
+                android:id="@+id/nextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/headerTextView"
+                android:layout_alignParentRight="true"
+                android:backgroundTint="@color/gray"
+                android:text="Next" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/topSection">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/recipes_completed_btn"
+                android:layout_width="275dp"
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="@color/yellow"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="10dp">
+
+                <RelativeLayout
+                    android:layout_width="275dp"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+                    <ListView
+                        android:id="@+id/recipe_ingredientList"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:padding="3dp" />
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="3dp">
+            <Button
+                android:id="@+id/checkAll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/yellow"
+                android:layout_above="@+id/checkNone"
+                android:textSize="11dp"
+                android:text="Check All"/>
+
+                <Button
+                    android:id="@+id/checkNone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:backgroundTint="@color/yellow"
+                    android:textSize="11dp"
+                    android:text="Check None" />
+                <Button
+                    android:id="@+id/sendToList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/checkNone"
+                    android:backgroundTint="@color/yellow"
+                    android:textSize="11dp"
+                    android:text="Add to List" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</layout>
